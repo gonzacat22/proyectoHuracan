@@ -1,86 +1,298 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
     margin: 0;
     padding: 0;
-    
-    
+    box-sizing: border-box0;
 }
-/*navbar*/
-.containerNav {
-    border-radius: 5px;
-    width: 100%;
-    height: 50vh;
-    background-image: linear-gradient(rgba(232, 241, 232, 0.8), rgba(14, 13, 14, 0.8)), url(./imgProyectoHuracan/fondoHuracan.jpg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: 5px;
-    justify-content:flex-start;
-    flex-wrap: wrap;
+body{
+    font-family: 'Roboto', sans-serif;
 }
-/*navbar*/
-.navbar {
-    width: 80%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content:center
+header{
+    background-color:  #050505 ;
+    text-align: center;
+    padding: 1px 0;
 }
-/*navbar*/
-.logo {
-    width: 180px;
-    cursor: pointer;
-    padding:2px;
+nav{
+    margin-top: 10px;
+    padding: 10px;
 }
-.logoRedes{
-    flex-wrap: wrap;
-    justify-content:right;
-    text-align: right;
-}
-/*navbar*/
-.navbar ul li {
-    list-style: none;
+nav a{
     display: inline-block;
-    margin: 0 20px;
-    position: relative;
-    justify-content: center;
-    margin-bottom: 10px;
+    text-decoration: none;
+    color:#eaeae3 ;
+    margin: 0 50px;
+    padding: 10px 10px;
+    border-radius: 30px;
+
 
 }
-/*navbar*/
-.navbar ul li a {
-    text-decoration: none;
-    color: rgb(218, 231, 33);
-    font-family: 'Ubuntu', sans-serif,;
-    font-size: 1.2rem;
-    justify-content:space-between;
+nav a:hover{
+    background-color: #0f5f2b;
+    color: #f0d024;
     
 }
-/*navbar*/
-.navbar ul li::before {
-    content: "";
-    height: 200px;
-    width: 0%;
-    background: rgb(72, 105, 5);
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    transition: 0.4s ease-out;
-    justify-items: baseline;
-}
-/*navbar*/
-.navbar ul li:hover::before {
-    width: 100%;
-    justify-content: center;
-}
-/*navbar*/
-.h1Title{
+.encabezadoImg{
+    background-image: url(../imgProyectoHuracan/huracanVarias/Navbarhura.png);
     
-    text-align: center;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    color: #f0d024;
+
+} 
+.encabezadoImg p{
+    font-size: 20px;
+}
+.encabezadoImg h1{
     font-size: 50px;
-    justify-content: center;
+    padding: 20px;
+}
+/*main*/
+html {
+    background: #0f5f2b ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  div, h2, p, figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 20px;
+  }
+  
+  .columns {
+    display: flex;
+  }
+  
+  .column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .mainColumn {
+    flex: 2;
+  }
+  
+  .article {
+    background: #eaeae3;
+    color: #605e58 ;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 10px;
+  }
+  
+  .article-image {
+    background: #eaeae3;
+    display: block;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+  }
+  
+  .article-image img {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .article-image.is-3by2 {
+    padding-top: 66.6666%;
+  }
+  
+  .article-image.is-16by9 {
+    padding-top: 56.25%;
+  }
+  
+  .article-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .article-title {
+    color: #040404 ;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .article-content {
+    flex: 1;
+    margin-top: 5px;
+  }
+  
+  .article-info {
+    display: flex;
+    font-size: 0.85em;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  /*mainPublicidad*/
+.containerPubli{
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.sliderPubli{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.sliderPubli li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.sliderPubli li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.sliderPubli li:first-child {
+      opacity: 1; 
+  }
+  
+  ul.sliderPubli li:target {
+      opacity: 1; 
+  }
+  
+  .menuPubli{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menuPubli li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menuPubli li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+  /*footer*/
+  footer{
+    width: 100%;
+    padding: 50px 0px;
+    /*border: 5px groove #0f5f2b;
+    background-image: url(../imgProyectoHuracan/huracanVarias/WhatsApp\ Image\ 2022-03-18\ at\ 8.49.01\ PM.jpeg);
+    background-color: #f0d024;
+    background-size: cover;*/
     
+    background-color:  #040404 ;
+    -webkit-mask-image: url("../imgProyectoHuracan/huracanVarias/background-footer.svg");
+    mask-image: url("../imgProyectoHuracan/huracanVarias/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.containerFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.boxFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.boxFooter .logo img{
+    width: 180px;
+}
+
+.boxFooter .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #0f5f2b  ;
+    font-size: 18px;
+}
+
+.boxFooter h2{
     
+    margin-bottom: 30px;
+    color: #eaeae3 ;
+    font-weight: 900;
+}
+
+.boxFooter a{
+    margin-top: 10px;
+    color: #0f5f2b  ;
+    font-weight: 600;
+}
+
+.boxFooter a:hover{
+    opacity: 0.8;
+}
+
+.boxFooter a .fab{
+    font-size: 20px;
+}
+
+.boxCopyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.boxCopyright p{
+    margin-top: 20px;
+    color:  #f0d024;
+}
+
+.boxCopyright hr{
+    border: none;
+    height: 1px;
+    background-color:   #0f5f2b;
 }
