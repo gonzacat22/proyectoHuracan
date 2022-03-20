@@ -1,64 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box0;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-}
-header{
-    background-color:  #050505 ;
-    text-align: center;
-    padding: 1px 0;
-}
-nav{
-    margin-top: 10px;
-    padding: 10px;
-}
-nav a{
-    display: inline-block;
-    text-decoration: none;
-    color:#eaeae3 ;
-    margin: 0 50px;
-    padding: 10px 10px;
-    border-radius: 30px;
+/*footer*/
 
-
+  
+  /*mainPublicidad*/
+  @keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
 }
-nav a:hover{
-    background-color: #0f5f2b;
-    color: #f0d024;
-    
-}
-.encabezadoImg{
-    background-image: url(../imgProyectoHuracan/huracanVarias/Navbarhura.png);
-    object-fit: cover;
-    height: 450px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content:baseline;
-    align-items: center;
-    color: #f0d024;
-
-} 
-.encabezadoImg p{
-    font-size: 20px;
-}
-.encabezadoImg h1{
-    font-size: 50px;
-    padding: 20px;
-}
-/*main*/
-
-
-/*mainPublicidad*/
 .containerPubli{
-    margin: auto;
+    margin: 8% auto;
     background-color: white;
     width: 800px;
-    padding: 20px;
+    padding: 5px;
   }
   
   ul, li {
@@ -120,7 +75,6 @@ nav a:hover{
     border-radius: 100%;
   }
 
-  /*footer*/
   footer{
     width: 100%;
     padding: 50px 0px;
