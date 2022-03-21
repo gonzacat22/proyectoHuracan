@@ -154,7 +154,7 @@ html {
   
   .main {
     
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
     max-width: 1040px;
     padding: 20px;
   }
