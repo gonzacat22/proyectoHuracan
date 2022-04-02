@@ -1,30 +1,121 @@
 /*Comienzo Header */
 /*inicio Header de todas las paginas*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: none;
   padding: none;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 25px;
 }
 
 header {
   background-color: #050505;
   text-align: center;
+  margin: 0%;
 
-  background-image: repeating-linear-gradient(
-    90deg,
-    #f0d024,
-    #f0d024 5px,
-    #0f5f2b 35px
-  );
+  background-image: repeating-linear-gradient(20deg,
+      #f0d024,
+      #f0d024 5px,
+      #0f5f2b 35px);
 }
+
+html,
+body {
+  width: 100%;
+  heigth: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
+
+
+
+
+
+
+.menu a {
+  text-decoration: none;
+
+  margin: 0 25px;
+  line-height: 30px;
+
+}
+
+
+
+
+
+#toggle {
+  display: none;
+
+
+}
+
+.main_content {
+  clear: both;
+  max-width: 80%;
+  margin: auto;
+  padding: 3px;
+}
+
+/*---------------------------------------------MEDIA QUERY-----------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+
+  .logo h1 {
+    font-size: 50px;
+  }
+
+  /*when the scren width is smaller than 500px, the label will show and the cursor will trasform into a pointer*/
+
+  label {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  /*the menu containing the links will have the text aligned in the center, it will take the full width of the page and it will be hidden if the label is not pressed*/
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    clear: both;
+  }
+
+  /*the links inside the menu will be block-displayed so they'll take the full width of the page and they'll have a bottom margin*/
+
+  .menu a {
+    clear: left;
+    display: block;
+
+    margin: 0;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+
+
+  }
+
+
+}
+
+
 
 nav {
   padding: 10px;
 }
+
 nav a {
   font-size: 25px;
   display: inline-block;
@@ -34,10 +125,12 @@ nav a {
   padding: 10px 10px;
   border-radius: 30px;
 }
+
 nav a:hover {
   background-color: #0f5f2b;
   color: #f0d024;
 }
+
 .encabezadoImg {
   background-image: url(../imgProyectoHuracan/huracanVarias/Navbarhura.png);
 
@@ -53,15 +146,18 @@ nav a:hover {
 .encabezadoImg p {
   font-size: 20px;
 }
+
 .encabezadoImg h1 {
   font-size: 50px;
   padding: 20px;
 }
+
 /*Final Header de todas las paginas*/
 
 /*Pertenece a pagina de noticias*/
 html {
-  background: #626362;
+  background: #0f5f2b;
+  ;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -90,6 +186,7 @@ ul {
   background-repeat: no-repeat;
   background-size: 360vh;
 }
+
 .h2Corousel3d {
   text-align: center;
   font-size: 40px;
@@ -99,6 +196,7 @@ ul {
   color: aqua;
   text-shadow: 0px 0px 6px black;
 }
+
 .content-all {
   width: 210px;
   margin: auto;
@@ -106,12 +204,14 @@ ul {
   position: relative;
   margin-top: 50px;
 }
+
 .content-carousel3d {
   width: 100%;
   position: absolute;
   animation: rotar 10s infinite linear;
   transform-style: preserve-3d;
 }
+
 .content-carousel3d:hover {
   animation-play-state: paused;
   cursor: pointer;
@@ -125,37 +225,48 @@ ul {
   box-shadow: 0px 0px 20px 0px black;
   transition: all 300ms;
 }
+
 .content-carousel3d figure:hover {
   box-shadow: 0px 0px 0px 0px black;
   transition: all 300ms;
 }
+
 .content-carousel3d figure:nth-child(1) {
   transform: rotateY(0deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(2) {
   transform: rotateY(40deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(3) {
   transform: rotateY(80deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(4) {
   transform: rotateY(120deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(5) {
   transform: rotateY(160deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(6) {
   transform: rotateY(200deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(7) {
   transform: rotateY(240deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(8) {
   transform: rotateY(280deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(9) {
   transform: rotateY(320deg) translateZ(300px);
 }
+
 .content-carousel3d figure:nth-child(10) {
   transform: rotateY(360deg) translateZ(300px);
 }
@@ -169,14 +280,17 @@ ul {
   transform: scale(1.2);
   transition: all 300ms;
 }
+
 @keyframes rotar {
   from {
     transform: rotateY(0deg);
   }
+
   to {
     transform: rotateY(360deg);
   }
 }
+
 /*Termino pagina Futbol*/
 /*Termino de Header*/
 
@@ -265,6 +379,7 @@ ul {
   justify-content: space-between;
   margin-top: 10px;
 }
+
 /*fin Pagina seccion noticias*/
 
 /*pertenece page socios*/
@@ -283,19 +398,22 @@ ul {
   text-align: center;
   font-size: 60px;
 }
+
 .pageSocios h2 {
   text-align: center;
   font-size: 30px;
 }
+
 /*fin page socios*/
 
 /*Pertenece a formulario contacto*/
 .bodyContact {
   background: #0f5f2b;
-  color: #fff;
+  color: #bbc2bd;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
-  padding: 0 1.5em;
+  font-size: 25px;
+
 }
 
 .container {
@@ -318,7 +436,7 @@ ul {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
   padding: 1em;
 }
 
@@ -388,15 +506,18 @@ ul {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-  .contact-wrapper > * {
+
+  .contact-wrapper>* {
     padding: 2em;
   }
+
   .contact-info h4,
   .contact-info ul,
   .contact-info p {
     text-align: left;
   }
 }
+
 /*Final formulario contacto*/
 
 /*Termino de Main*/
@@ -407,23 +528,28 @@ ul {
   margin: auto;
   overflow: hidden;
 }
+
 .sliderAuto ul {
   display: flex;
   padding: 0;
   width: 400%;
   animation: cambio 20s infinite alternate linear;
 }
+
 .sliderAuto li {
   width: 100%;
   list-style: none;
 }
+
 .sliderAuto img {
   width: 100%;
 }
+
 @keyframes cambio {
   0% {
     margin-left: 0;
   }
+
   20% {
     margin-left: 0;
   }
@@ -431,6 +557,7 @@ ul {
   25% {
     margin-left: -100%;
   }
+
   45% {
     margin-left: -100%;
   }
@@ -438,6 +565,7 @@ ul {
   50% {
     margin-left: -200%;
   }
+
   70% {
     margin-left: -200%;
   }
@@ -445,10 +573,12 @@ ul {
   75% {
     margin-left: -300%;
   }
+
   100% {
     margin-left: -300%;
   }
 }
+
 /*finsliderAuto*/
 
 /*Comienzo de footer va  en todas las paginas*/
@@ -532,4 +662,5 @@ footer {
   height: 1px;
   background-color: #0f5f2b;
 }
+
 /*Final de Footer*/
