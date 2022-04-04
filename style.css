@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 /*Comienzo Header */
 /*inicio Header de todas las paginas*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -11,17 +19,27 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
+
+  
+  background-size:cover;
+  background:linear-gradient(#f0d024 1px,#0f5f2b);
+  
+
+
+
+
 }
 
 header {
-  background-color: #050505;
+  
   text-align: center;
   margin: 0%;
+  
 
-  background-image: repeating-linear-gradient(20deg,
+  /*background-image: repeating-linear-gradient(20deg,
       #f0d024,
       #f0d024 5px,
-      #0f5f2b 35px);
+      #0f5f2b 35px);*/
 }
 
 html,
@@ -142,8 +160,9 @@ nav a:hover {
 
 /*Pertenece a pagina de noticias*/
 html {
+  background:linear-gradient(#f0d024 1px,#0f5f2b);
   background: #0f5f2b;
-  ;
+  
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -394,12 +413,14 @@ ul {
 
 /*Pertenece a formulario contacto*/
 .bodyContact {
+  background:linear-gradient(#f0d024 1px,#0f5f2b);
   background: #0f5f2b;
   color: #bbc2bd;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
-
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.3);
+  
 }
 
 .container {
@@ -416,6 +437,7 @@ ul {
 
 .logo span {
   color: #f0d024;
+  
 }
 
 .contact-wrapper {
@@ -461,7 +483,7 @@ ul {
 }
 
 .contact-form form button {
-  background: #f0d024;
+  background:linear-gradient(#f0d024 1px,#0f5f2b);
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -469,7 +491,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #0f5f2b;
+  background:linear-gradient(#f0d024 1px,#0f5f2b);
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
