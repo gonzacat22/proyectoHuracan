@@ -40,7 +40,7 @@ html {
   text-decoration: none;
 
   margin: 0 25px;
-  line-height: 30px;
+  line-height: 20px;
 
 }
 
@@ -52,8 +52,8 @@ html {
 .main_content {
   clear: both;
   max-width: 80%;
-  margin: auto;
-  padding: 3px;
+  margin: none;
+  padding: px;
 }
 
 /*---------------------------------------------MEDIA QUERY-----------------------------------------*/
@@ -61,7 +61,7 @@ html {
 @media only screen and (max-width: 500px) {
 
   .logo h1 {
-    font-size: 50px;
+    font-size: 15px;
   }
 
   /*cuando el ancho de la pantalla es inferior a 500 px, se mostrará la etiqueta y el cursor se transformará en un puntero*/
@@ -411,7 +411,7 @@ ul {
 
 .logo {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .logo span {
@@ -502,6 +502,7 @@ ul {
   .contact-info p {
     text-align: left;
   }
+  
 }
 
 /*Final formulario contacto*/
@@ -518,7 +519,7 @@ ul {
       transform: translateX(0);
   }
   100%{
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 3.5));
   }
 }
 .sliderPubliRespon{
@@ -529,9 +530,9 @@ ul {
   width: auto;
 }
 .sliderPubliRespon .slideTrack{
-  animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite alternate;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(250px * 18);
 }
 .sliderPubliRespon .slideImg {
   height: 100px;
