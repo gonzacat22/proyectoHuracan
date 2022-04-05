@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /*Comienzo Header */
 /*inicio Header de todas las paginas*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -20,21 +12,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
 
-  
-  background-size:cover;
-  background:linear-gradient(#f0d024 1px,#0f5f2b);
-  
-
-
-
-
+  background-size: cover;
+  background: linear-gradient(#f0d024 1px, #0f5f2b);
 }
 
 header {
-  
   text-align: center;
   margin: 0%;
-  
 
   /*background-image: repeating-linear-gradient(20deg,
       #f0d024,
@@ -45,7 +29,7 @@ header {
 html,
 body {
   width: 100%;
-  
+
   margin: 0;
   box-sizing: border-box;
 }
@@ -59,12 +43,10 @@ html {
 
   margin: 0 25px;
   line-height: 20px;
-
 }
 
 #toggle {
   display: none;
-
 }
 
 .main_content {
@@ -77,7 +59,6 @@ html {
 /*---------------------------------------------MEDIA QUERY-----------------------------------------*/
 
 @media only screen and (max-width: 500px) {
-
   .logo h1 {
     font-size: 15px;
   }
@@ -87,7 +68,6 @@ html {
   label {
     display: block;
     cursor: pointer;
-
   }
 
   /*el menú que contiene los enlaces tendrá el texto alineado en el centro, ocupará todo el ancho de la página y se ocultará si no se presiona la etiqueta*/
@@ -108,15 +88,10 @@ html {
     margin: 0;
   }
 
-  #toggle:checked+.menu {
+  #toggle:checked + .menu {
     display: block;
-
-
   }
-
-
 }
-
 
 nav {
   padding: 10px;
@@ -160,9 +135,9 @@ nav a:hover {
 
 /*Pertenece a pagina de noticias*/
 html {
-  background:linear-gradient(#f0d024 1px,#0f5f2b);
+  background: linear-gradient(#f0d024 1px, #0f5f2b);
   background: #0f5f2b;
-  
+
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -413,14 +388,13 @@ ul {
 
 /*Pertenece a formulario contacto*/
 .bodyContact {
-  background:linear-gradient(#f0d024 1px,#0f5f2b);
+  background: linear-gradient(#f0d024 1px, #0f5f2b);
   background: #0f5f2b;
   color: #bbc2bd;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   box-shadow: 0 20px 20px rgba(255, 255, 255, 0.3);
-  
 }
 
 .container {
@@ -430,18 +404,15 @@ ul {
   padding: 1.5em;
 }
 
-.formMapa{
-  
+.formMapa {
   box-sizing: border-box;
-  display:block;
+  display: block;
   box-shadow: 20px 20px 20px rgba(255, 255, 255, 0.3);
   background: #0f5f2b;
   width: 60vw;
-   padding: 20px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  
-
 }
 
 .logo {
@@ -451,14 +422,13 @@ ul {
 
 .logo span {
   color: #f0d024;
-  
 }
 
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-.contact-wrapper>* {
+.contact-wrapper > * {
   padding: 1em;
 }
 
@@ -497,7 +467,7 @@ ul {
 }
 
 .contact-form form button {
-  background:linear-gradient(#f0d024 1px,#0f5f2b);
+  background: linear-gradient(#f0d024 1px, #0f5f2b);
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -505,7 +475,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background:linear-gradient(#f0d024 1px,#0f5f2b);
+  background: linear-gradient(#f0d024 1px, #0f5f2b);
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
@@ -529,7 +499,7 @@ ul {
     grid-template-columns: 2fr 1fr;
   }
 
-  .contact-wrapper>* {
+  .contact-wrapper > * {
     padding: 2em;
   }
 
@@ -538,7 +508,6 @@ ul {
   .contact-info p {
     text-align: left;
   }
-  
 }
 
 /*Final formulario contacto*/
@@ -546,26 +515,26 @@ ul {
 /*Termino de Main*/
 
 /*slidePublicidad*/
-.divBoby{
+.divBoby {
   align-items: center;
   justify-content: center;
 }
-@keyframes scroll{
-  0%{
-      transform: translateX(0);
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  100%{
-      transform: translateX(calc(-250px * 3.5));
+  100% {
+    transform: translateX(calc(-250px * 3.5));
   }
 }
-.sliderPubliRespon{
+.sliderPubliRespon {
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: auto;
 }
-.sliderPubliRespon .slideTrack{
+.sliderPubliRespon .slideTrack {
   animation: scroll 40s linear infinite alternate;
   display: flex;
   width: calc(250px * 18);
