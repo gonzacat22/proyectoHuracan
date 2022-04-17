@@ -385,23 +385,7 @@ ul {
   margin: 0 0 1rem 0;
 }
 
-/* Largo*/
-@media (min-width: 700px) {
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
 
-  .contact-wrapper>* {
-    padding: 2em;
-  }
-
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-    text-align: left;
-  }
-}
 
 /*Final formulario contacto*/
 
@@ -447,8 +431,8 @@ ul {
 /*Comienzo de footer va  en todas las paginas*/
 
 footer {
-  width: 100%;
-  padding: 80px 0px;
+  width: 110%;
+  padding:5%;
   /*border: 5px groove #0f5f2b;
     background-image: url(../imgProyectoHuracan/huracanVarias/WhatsApp\ Image\ 2022-03-18\ at\ 8.49.01\ PM.jpeg);
     background-color: #f0d024;
@@ -462,12 +446,13 @@ footer {
 }
 
 .containerFooter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 100px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  width: 1100px;
+  margin:0%;
+  padding: 0%;
+  
 }
 
 .boxFooter {
@@ -485,17 +470,17 @@ footer {
   margin-top: 20px;
   font-weight: 500;
   color: #0f5f2b;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .boxFooter h2 {
-  margin-bottom: 30px;
+  font-weight: 600;
   color: #eaeae3;
-  font-weight: 900;
+  
 }
 
 .boxFooter a {
-  margin-top: 10px;
+  margin: 0%;
   color: #0f5f2b;
   font-weight: 600;
 }
@@ -509,10 +494,10 @@ footer {
 }
 
 .boxCopyright {
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
   text-align: center;
-  padding: 0px 40px;
+  padding: 0px 20px;
 }
 
 .boxCopyright p {
@@ -527,3 +512,21 @@ footer {
 }
 
 /*Final de Footer*/
+
+/* Largo Formulario de contacto*/
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .contact-wrapper>* {
+    padding: 2em;
+  }
+
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
