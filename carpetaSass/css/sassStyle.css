@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 .encabezadoImg {
-  background-image: url(../imgProyectoHuracan/huracanVarias/Navbarhura.png);
+  background-image: url(/imgProyectoHuracan/huracanVarias/Navbarhura.png);
   height: 100%;
   background-size: cover;
   display: flex;
@@ -413,8 +413,8 @@ footer {
     background-color: #f0d024;
     background-size: cover;*/
   background-color: #040404;
-  -webkit-mask-image: url("../imgProyectoHuracan/huracanVarias/background-footer.svg");
-  mask-image: url("../imgProyectoHuracan/huracanVarias/background-footer.svg");
+  -webkit-mask-image: url("/imgProyectoHuracan/huracanVarias/background-footer.svg");
+  mask-image: url("/imgProyectoHuracan/huracanVarias/background-footer.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
 }
