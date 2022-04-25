@@ -2,6 +2,7 @@
 /*Comienzo Header */
 /*inicio Header de todas las paginas*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/*Esto es el header*/
 * {
   margin: none;
   padding: none;
@@ -55,37 +56,6 @@ html {
   padding: px;
 }
 
-/*---------------------------------------------MEDIA QUERY-----------------------------------------*/
-@media only screen and (max-width: 500px) {
-  .logo h1 {
-    font-size: 15px;
-  }
-
-  /*cuando el ancho de la pantalla es inferior a 500 px, se mostrará la etiqueta y el cursor se transformará en un puntero*/
-  label {
-    display: block;
-    cursor: pointer;
-  }
-
-  /*el menú que contiene los enlaces tendrá el texto alineado en el centro, ocupará todo el ancho de la página y se ocultará si no se presiona la etiqueta*/
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-    clear: both;
-  }
-
-  /*los enlaces dentro del menú se mostrarán en bloque, por lo que ocuparán todo el ancho de la página y tendrán un margen inferior*/
-  .menu a {
-    clear: left;
-    display: block;
-    margin: 0;
-  }
-
-  #toggle:checked + .menu {
-    display: block;
-  }
-}
 nav {
   padding: 10px;
 }
@@ -126,7 +96,7 @@ nav a:hover {
 }
 
 /*Final Header de todas las paginas*/
-/*Pertenece a pagina de noticias*/
+/*Main Noticias*/
 html {
   background: linear-gradient(#f0d024 1px, #0f5f2b);
   background: #0f5f2b;
@@ -146,15 +116,6 @@ figure {
   padding: 0;
 }
 
-/*ul de la pagina contacto*/
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-/*Termino de Header*/
-/*Comienzo de main*/
-/*pertenece a paginas noticias*/
 .main {
   margin: auto;
   max-width: 1040px;
@@ -239,30 +200,13 @@ ul {
 }
 
 /*fin Pagina seccion noticias*/
-/*pertenece page socios*/
-.imgSocios {
-  margin: 2% auto;
-  text-align: center;
-}
-
-.pageSocios {
-  margin: 0;
+/*Main Contacto*/
+/*ul de la pagina contacto*/
+ul {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box0;
 }
 
-.pageSocios h1 {
-  text-align: center;
-  font-size: 60px;
-}
-
-.pageSocios h2 {
-  text-align: center;
-  font-size: 30px;
-}
-
-/*fin page socios*/
-/*Pertenece a formulario contacto*/
 .bodyContact {
   background: linear-gradient(#f0d024 1px, #0f5f2b);
   background: #0f5f2b;
@@ -369,42 +313,7 @@ ul {
 }
 
 /*Final formulario contacto*/
-/*Termino de Main*/
-/*slidePublicidad*/
-.divBoby {
-  align-items: center;
-  justify-content: center;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-875px);
-  }
-}
-.sliderPubliRespon {
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-}
-
-.sliderPubliRespon .slideTrack {
-  animation: scroll 40s linear infinite alternate;
-  display: flex;
-  width: 4500px;
-}
-
-.sliderPubliRespon .slideImg {
-  height: 100px;
-  width: 250px;
-}
-
-/*finsliderpublicidad*/
-/*Comienzo de footer va  en todas las paginas*/
+/*Esto es el Footer*/
 footer {
   width: 110%;
   padding: 5%;
@@ -484,7 +393,42 @@ footer {
 }
 
 /*Final de Footer*/
-/* Largo Formulario de contacto*/
+/*Slider Publicidad*/
+/*slidePublicidad*/
+.divBoby {
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-875px);
+  }
+}
+.sliderPubliRespon {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.sliderPubliRespon .slideTrack {
+  animation: scroll 40s linear infinite alternate;
+  display: flex;
+  width: 4500px;
+}
+
+.sliderPubliRespon .slideImg {
+  height: 100px;
+  width: 250px;
+}
+
+/*finsliderpublicidad*/
+/*****Media Query*/
 @media (min-width: 700px) {
   .contact-wrapper {
     display: grid;
@@ -499,6 +443,36 @@ footer {
 .contact-info ul,
 .contact-info p {
     text-align: left;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .logo h1 {
+    font-size: 15px;
+  }
+
+  /*cuando el ancho de la pantalla es inferior a 500 px, se mostrará la etiqueta y el cursor se transformará en un puntero*/
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  /*el menú que contiene los enlaces tendrá el texto alineado en el centro, ocupará todo el ancho de la página y se ocultará si no se presiona la etiqueta*/
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    clear: both;
+  }
+
+  /*los enlaces dentro del menú se mostrarán en bloque, por lo que ocuparán todo el ancho de la página y tendrán un margen inferior*/
+  .menu a {
+    clear: left;
+    display: block;
+    margin: 0;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
   }
 }
 

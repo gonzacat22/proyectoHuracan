@@ -1,0 +1,99 @@
+/*Esto es el header*/
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+  
+    background-size: cover;
+    background: linear-gradient(#f0d024 1px, #0f5f2b);
+  }
+  
+  header {
+    text-align: center;
+    margin: 0%;
+  
+    /*background-image: repeating-linear-gradient(20deg,
+        #f0d024,
+        #f0d024 5px,
+        #0f5f2b 35px);*/
+  }
+  
+  .colorBackgrBootstrap {
+    background-color: #040404;
+  }
+  
+  body {
+    width: 100%;
+  
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Helvetica", sans-serif;
+  }
+  
+  .menu a {
+    text-decoration: none;
+  
+    margin: 0 25px;
+    line-height: 20px;
+  }
+  
+  #toggle {
+    display: none;
+  }
+  
+  .main_content {
+    clear: both;
+    max-width: 80%;
+    margin: none;
+    padding: px;
+  }
+  
+  
+  nav {
+    padding: 10px;
+  }
+  
+  nav a {
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: #070707;
+    margin: 0 20px;
+    padding: 10px 10px;
+    border-radius: 30px;
+  }
+  
+  nav a:hover {
+    background-color: #0f5f2b;
+    color: #f0d024;
+  }
+  
+  .encabezadoImg {
+    background-image: url(/imgProyectoHuracan/huracanVarias/Navbarhura.png);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    color: #f0d024;
+  }
+  
+  .encabezadoImg p {
+    font-size: 20px;
+  }
+  
+  .encabezadoImg h1 {
+    font-size: 50px;
+    padding: 20px;
+  }
+  
+  /*Final Header de todas las paginas*/

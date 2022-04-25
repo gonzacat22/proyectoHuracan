@@ -1,0 +1,84 @@
+/*Esto es el Footer*/
+footer {
+    width: 110%;
+    padding:5%;
+    /*border: 5px groove #0f5f2b;
+      background-image: url(../imgProyectoHuracan/huracanVarias/WhatsApp\ Image\ 2022-03-18\ at\ 8.49.01\ PM.jpeg);
+      background-color: #f0d024;
+      background-size: cover;*/
+  
+    background-color: #040404;
+    -webkit-mask-image: url("/imgProyectoHuracan/huracanVarias/background-footer.svg");
+    mask-image: url("/imgProyectoHuracan/huracanVarias/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+  
+  .containerFooter {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width: 1100px;
+    margin:0%;
+    padding: 0%;
+    
+  }
+  
+  .boxFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .boxFooter .logo img {
+    width: 180px;
+  }
+  
+  .boxFooter .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #0f5f2b;
+    font-size: 20px;
+  }
+  
+  .boxFooter h2 {
+    font-weight: 600;
+    color: #eaeae3;
+    
+  }
+  
+  .boxFooter a {
+    margin: 0%;
+    color: #0f5f2b;
+    font-weight: 600;
+  }
+  
+  .boxFooter a:hover {
+    opacity: 0.8;
+  }
+  
+  .boxFooter a .fab {
+    font-size: 20px;
+  }
+  
+  .boxCopyright {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  
+  .boxCopyright p {
+    margin-top: 20px;
+    color: #f0d024;
+  }
+  
+  .boxCopyright hr {
+    border: none;
+    height: 1px;
+    background-color: #0f5f2b;
+  }
+  
+  /*Final de Footer*/
+  

@@ -1,0 +1,37 @@
+/*Slider Publicidad*/
+/*slidePublicidad*/
+.divBoby {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-250px * 3.5));
+    }
+  }
+  
+  .sliderPubliRespon {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  
+  .sliderPubliRespon .slideTrack {
+    animation: scroll 40s linear infinite alternate;
+    display: flex;
+    width: calc(250px * 18);
+  }
+  
+  .sliderPubliRespon .slideImg {
+    height: 100px;
+    width: 250px;
+  }
+  
+  /*finsliderpublicidad*/
