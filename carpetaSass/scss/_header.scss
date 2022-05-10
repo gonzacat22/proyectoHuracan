@@ -16,16 +16,10 @@
   header {
     text-align: center;
     margin: 0%;
-  
-    /*background-image: repeating-linear-gradient(20deg,
-        #f0d024,
-        #f0d024 5px,
-        #0f5f2b 35px);*/
+   
   }
   
-  .colorBackgrBootstrap {
-    background-color: #040404;
-  }
+  
   
   body {
     width: 100%;
@@ -73,7 +67,7 @@
   
   nav a:hover {
     background-color: #0f5f2b;
-    color: #f0d024;
+    
   }
   
   .encabezadoImg {
@@ -96,7 +90,4 @@
     padding: 20px;
   }
   
-  //Extends No LoVoy a utilizar en mi proyecto ahora pero modificare la pagina de contacto por una seccion de redes sociales, extends me serviria para que solo cambie el icono y el color del mismo
-  
-
   /*Final Header de todas las paginas*/
