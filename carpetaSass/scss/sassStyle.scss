@@ -1,0 +1,65 @@
+/*Comienzo Header */
+/*inicio Header de todas las paginas*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import "mainMultimedia";
+@import "header";
+@import "mainNoticias";
+@import "mainContacto";
+@import "footer";
+@import "sliderPublicidad";
+
+
+
+
+/*****Media Query*/
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .contact-wrapper>* {
+    padding: 2em;
+  }
+
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .logo h1 {
+    font-size: 15px;
+  }
+
+  /*cuando el ancho de la pantalla es inferior a 500 px, se mostrará la etiqueta y el cursor se transformará en un puntero*/
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  /*el menú que contiene los enlaces tendrá el texto alineado en el centro, ocupará todo el ancho de la página y se ocultará si no se presiona la etiqueta*/
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    clear: both;
+  }
+
+  /*los enlaces dentro del menú se mostrarán en bloque, por lo que ocuparán todo el ancho de la página y tendrán un margen inferior*/
+
+  .menu a {
+    clear: left;
+    display: block;
+
+    margin: 0;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+  }
+}
+
